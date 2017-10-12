@@ -6,17 +6,17 @@ import org.litepal.crud.DataSupport;
  * Created by 廖松 on 2017/10/10.
  */
 
-public class Country extends DataSupport {
+public class County extends DataSupport {
     private int id;
-    private String countryName;//县城名字
+    private String countyName;//县城名字
     private String weatherId;//记录县城对应的天气ID
     private int cityId;//记录当前所属市的id值
-    public String getCountryName() {
-        return countryName;
+    public String getCountyName() {
+        return countyName;
     }
 
-    public void setCountryName(String countryName) {
-        this.countryName = countryName;
+    public void setCountyName(String countyName) {
+        this.countyName = countyName;
     }
 
     public int getCityId() {
@@ -42,5 +42,6 @@ public class Country extends DataSupport {
     public void setId(int id) {
         this.id = id;
     }
+
 
 }
